@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сучасний калькулятор</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Calculator_font_awesome.svg/2048px-Calculator_font_awesome.svg.png">
+</head>
+<body>
+  <div class="calculator">
+    <div id="display" class="display">0</div>
+    <div class="buttons">
+    
+      <button onclick="inputOperator('sin')" class="function-special">sin</button>
+      <button onclick="inputOperator('cos')" class="function-special">cos</button>
+      <button onclick="inputOperator('tan')" class="function-special">tan</button>
+      <button onclick="inputOperator('cot')" class="function-special">cot</button>
+
+      <button onclick="clearDisplay()" class="function-btn">C</button>
+      <button onclick="backspace()" class="function-btn">←</button>
+      <button onclick="inputOperator('sqrt')" class="function-btn">√</button>
+      <button onclick="inputOperator('*')" class="operator-btn">×</button>
+      
+      <button onclick="inputNumber(7)">7</button>
+      <button onclick="inputNumber(8)">8</button>
+      <button onclick="inputNumber(9)">9</button>
+      <button onclick="inputOperator('/')" class="operator-btn">÷</button>
+      
+      <button onclick="inputNumber(4)">4</button>
+      <button onclick="inputNumber(5)">5</button>
+      <button onclick="inputNumber(6)">6</button>
+      <button onclick="inputOperator('+')" class="operator-btn">+</button>
+      
+      <button onclick="inputNumber(1)">1</button>
+      <button onclick="inputNumber(2)">2</button>
+      <button onclick="inputNumber(3)">3</button>
+      <button onclick="inputOperator('-')" class="operator-btn">−</button>
+      
+      <button onclick="inputNumber(0)" class="zero">0</button>
+      <button onclick="inputDot()">.</button>
+      <button onclick="calculate()" class="equals-btn">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
